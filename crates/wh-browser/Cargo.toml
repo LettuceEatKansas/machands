@@ -1,0 +1,23 @@
+[package]
+name = "wh-browser"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "winhands browser module: a small CDP client that reads and drives the owner's Brave over 127.0.0.1"
+
+[dependencies]
+wh-core = { workspace = true }
+serde_json = { workspace = true }
+regex = { workspace = true }
+base64 = { workspace = true }
+getrandom = { workspace = true }
+tokio = { workspace = true, features = ["rt", "net", "time", "io-util"] }
+tokio-tungstenite = { workspace = true }
+futures-util = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt", "net", "time", "io-util", "macros"] }
+
+[lints]
+workspace = true

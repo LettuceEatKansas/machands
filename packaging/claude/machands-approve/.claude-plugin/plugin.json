@@ -1,0 +1,1 @@
+{"name": "machands-approve", "version": "0.1.0", "description": "Pops an Allow/Deny box when Mac hands needs the user's OK for a sketchy step, then unlocks and reruns it. Typing allow CODE in chat still works."}
